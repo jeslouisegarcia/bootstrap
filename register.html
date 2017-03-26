@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -11,59 +12,174 @@
     <link href="css/animate.min.css" rel="stylesheet"> 
     <link href="css/lightbox.css" rel="stylesheet"> 
 	<link href="css/main.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">                
+	<link href="css/responsive.css" rel="stylesheet">      
+	<link rel="stylesheet" type="text/css" href="register.css">
+    <script src="register.js"></script>          
     </head>
-    <body>            
-                <div class="col-md-4 col-sm-12">
-                    <div class="contact-form bottom">
-                        <h2>Register</h2>
-                        <form id="main-contact-form" name="contact-form" method="post" action="thankyou.html">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" required="required" placeholder="First Name">
-                            </div>
-                            
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" required="required" placeholder="Last Name">
-                            </div>
-                            
-                            <div class="form-group">
-                                <input type="email" name="email" class="form-control" required="required" placeholder="Email Address">
-                            </div>
-                            
-                            <div class="form-group">
-                                <input type="text" name="phone" class="form-control" required="required" placeholder="Phone Number">
-                            </div>
-                            
-                            <div class="form-group">
-                                <input type="text" name="contact" class="form-control" required="required" placeholder="Emergency Contact (Name, relationship, phone number)">
-                            </div>
-                            
-                            <div class="form-group">
-                                <input type="text" name="limitations" class="form-control" required="required" placeholder="Allergies/Physical Limitations">
-                            </div>
-                         
-                            <div>
-                            <textarea name="availability" id="availability" required="required" class="form-control" rows="8" placeholder="Have you been vaccinated for rabies within the past two years? (Yes/No)"></textarea>
-                            </div>
-                            
-                            <div>
-                            <textarea name="availability" id="availability" required="required" class="form-control" rows="8" placeholder="Do you hold a valid permit to rehabilitate wildlife in the state of Virginia? (Yes/No)"></textarea>
-                            </div> 
-                            
-                            <div>
-                            <textarea name="teams" id="teams" required="required" class="form-control" rows="8" placeholder="What team(s) are you interested in working with?"></textarea>
-                            </div>
-                            
-                            <div>
-                            <textarea name="availability" id="availability" required="required" class="form-control" rows="8" placeholder="Availability (days of the week; seasonal or year-round)"></textarea>
-                            </div>                      
-                            
-                            <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-submit" value="Submit">
-                            </div>
+    <body> 
+    
+    <div class="page">
+  <div class="form">
+  	 <center><img src="images/text-logo-300.png"></center><br><br>
+    <form class="page-form">
+
+<!-- Form Name -->
+ <center><h1>Volunteer Registration</h1></center>
+
+
+<h2>Basic Information</h2>
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="name">Full Name:</label>
+  <div class="controls">
+    <input id="name" name="name" type="text" placeholder="Quinn the Owl" class="input-xlarge"  >
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="gender">Gender:</label>
+  <div class="controls">
+    <input id="gender" name="gender" type="text" placeholder="" class="input-xlarge">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="volunteer-phone">Phone Number:</label>
+  <div class="controls">
+    <input id="volunteer-phone" name="volunteer-phone" type="text" placeholder="888-888-8888" class="input-xlarge"  >
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="email">Email:</label>
+  <div class="controls">
+    <input id="email" name="email" type="text" placeholder="quinn@thewildlifecenter.org" class="input-xlarge"  >
+    
+  </div>
+</div>
+
+<h2>Emergency Contact Information</h2>
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="emergency-contact">Contact's Name:</label>
+  <div class="controls">
+    <input id="emergency-contact" name="emergency-contact" type="text" placeholder="Buttercup the Black Vulture" class="input-xlarge"  >
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="emergency-phone">Phone Number:</label>
+  <div class="controls">
+    <input id="emergency-phone" name="emergency-phone" type="text" placeholder="555-555-5555" class="input-xlarge"  >
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="control-group">
+  <label class="control-label" for="contact-relation">Relationship</label>
+  <div class="controls">
+    <select id="contact-relation" name="contact-relation" class="input-xlarge" style="background-color:#ffffff;width:500px;height:35px;font-size:12px;border:0px;">
+      <option>Parent/Guardian</option>
+      <option>Sibling</option>
+      <option>Family/Relative</option>
+      <option>Friend</option>
+      <option>Co-Worker</option>
+      <option>Other</option>
+    </select>
+  </div>
+</div>
+
+<h2>Medical Information</h2>
+<!-- Textarea -->
+<div class="control-group">
+  <label class="control-label" for="allergies">Allergies</label>
+  <div class="controls">                     
+    <textarea id="allergies" name="allergies" style="background-color:#ffffff;width:500px;font-size:12px;border:0px;padding:5px;">Please list any allergies you may have.</textarea>
+  </div>
+</div>
+<br>
+<!-- Textarea -->
+<div class="control-group">
+  <label class="control-label" for="accommodations">Limitations</label>
+  <div class="controls">                     
+    <textarea id="accommodations" name="accommodations" style="background-color:#ffffff;width:500px;font-size:12px;border:0px;padding:5px;">Please list any limitations (e.g. heavy lifting) you may have and/or any accommodations you would need.</textarea>
+  </div>
+</div>
+
+<h2>Volunteering Information</h2>
+
+<!-- Select Basic -->
+<div class="control-group">
+  <label class="control-label" for="contact-relation">Have you been vaccinated for rabies within the past two years?</label>
+  <div class="controls">
+    <select id="contact-relation" name="contact-relation" class="input-xlarge" style="background-color:#ffffff;width:500px;height:35px;font-size:12px;border:0px;">
+      <option>Yes</option>
+      <option>No</option>
+      <option>In the process</option>
+      <option>Unsure</option>
+    </select>
+  </div>
+</div>
+
+<br>
+<!-- Select Basic -->
+<div class="control-group">
+  <label class="control-label" for="contact-relation">Do you hold a valid permit to rehabilitate wildlife in the state of Virginia?</label>
+  <div class="controls">
+    <select id="contact-relation" name="contact-relation" class="input-xlarge" style="background-color:#ffffff;width:500px;height:35px;font-size:12px;border:0px;">
+      <option>Yes</option>
+      <option>No</option>
+      <option>In the process</option>
+      <option>Unsure</option>
+    </select>
+  </div>
+</div>
+
+<br>
+
+<!-- Select Multiple -->
+<div class="control-group">
+  <label class="control-label" for="teams">What teams are you interested in working with?</label>
+  <div class="controls">
+    <select id="teams" name="teams" class="input-xlarge" multiple="multiple" style="background-color:#ffffff;width:500px;font-size:12px;border:0px;">
+      <option>Onsite</option>
+      <option>Offsite</option>
+      <option>Outreach</option>
+      <option>Transportation</option>
+    </select>
+  </div>
+</div>
+
+<br><br>
+
+<!-- Button -->
+<div class="control-group">
+  <label class="control-label" for="submit"></label>
+  <div class="controls">
+    <button id="submit" name="submit" class="btn btn-success"><a href="thankyou.html">Submit</a></button>
+  </div>
+</div>
+
+ 	<center> <p class="message">Return to <a href="login.html"> <i class="fa fa-arrow-left" aria-hidden="true"></i>Login</a>.</p> </center>
+     <center> <p class="message">Return to <a href="http://wildlifecenter.org/">The Wildlife Center</a> website.</p> </center>
                             
                         </form>
                     </div>
                 </div>
+
+
+    </form>
+  </div>
+</div>                
+
     </body>
 </html>
