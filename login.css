@@ -16,7 +16,7 @@ body {
  	color: #3c323a;
 }
 
-.login-page {
+.page {
   width: 360px;
   padding: 8% 0 0;
   margin: auto;
@@ -34,6 +34,7 @@ body {
   position: absolute;
   z-index: 1;
   background: #FFFFFF;
+  background-image: url("images/bg.jpg");
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -43,7 +44,7 @@ body {
 .form input {
   font-family: "Lato", sans-serif;
   outline: 0;
-  background: #f2f2f2;
+  background: #ffffff;
   width: 100%;
   border: 0;
   margin: 0 0 15px;
