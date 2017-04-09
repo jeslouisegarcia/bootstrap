@@ -1,0 +1,404 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Bitter|Lato');
+
+/* table */
+
+table.grid, table.grid th, table.grid td {
+	border-collapse: collapse;
+	border: 1px solid #000;
+	vertical-align: top;
+}
+
+table.grid {
+	margin: 20px 0px;
+}
+
+table.grid th, table.grid td {
+	width: 13%;
+}
+
+table.grid th {
+	background: #ffe4b5;
+}
+
+
+table.grid th.cal_top {
+	background: #B0E0E6;
+	font-size: 16pt;
+}
+
+table.grid td {
+	background: #FFF;
+}
+
+/* body */
+
+BODY {
+	font-family: "Lato", serif;
+	font-size: 12px;
+	background-color: #d3d7ae;
+	color: #3c323a;
+	margin: 0px;
+}
+
+a {
+  font-family: "Lato", serif;
+  text-transform: uppercase;
+  text-align:right;
+  width: 100%;
+  padding: 4px;
+  background-color:transparent;
+  color: #faf9e7;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.top_nav {
+	float: right;
+}
+
+.top {
+	background-image: url("../images/website-background.png");
+	no-repeat center center fixed; 
+  		-webkit-background-size: cover;
+ 		-moz-background-size: cover;
+  		-o-background-size: cover;
+ 	background-repeat: no repeat;
+ 	background-size: cover;
+ 	font-family: 'Lato', sans-serif;
+ 	font-size: 14px;
+ 	color: #3c323a;
+ 	padding:30px;
+	border-bottom: 10px solid #3c323a;
+	height: 80px;
+}
+
+.nav {
+	background-color : #3c323a;
+	color: #b8c076;
+	padding: 0px 10px;
+	border-bottom: 10px solid #3c323a;
+	line-height: 50px;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+.top A, .nav A, .cal_top A, .bottom A {
+	background-color: #3c323a;
+	color: #faf9e7;
+	text-decoration: none;
+	padding-top:30px;
+}
+
+.nav A, .cal_top A {
+	color: #c60;
+	background-color: transparent;
+}
+.nav A {
+	padding: 2px;
+}
+.nav A.selected {
+	background: #b8c076;
+	color: #faf9e7;
+}
+
+.bottom {
+	clear: left;
+	background-color : #3c323a;
+	color: #faf9e7;
+	padding: 5px 10px;
+	border-top: 1px solid #3c323a;
+	border-bottom: 1px solid #3c323a;
+}
+
+.top h1 {
+	margin: 0em;
+	padding: 0em;
+}
+
+.content {
+	padding: 10px;
+	background-color:#b8c076;
+	font-family: 'Lato', sans-serif;
+}
+.content .item {
+	padding: 2px;
+}
+
+h1 {
+	font-size: 20pt;
+	font-family: 'Lato', sans-serif;
+}
+
+h2 {
+	font-size: 16pt;	
+	font-family: 'Lato', sans-serif;
+}
+
+h3 {
+	font-size: 14pt;	
+	font-family: 'Lato', sans-serif;
+}
+
+h4 {
+	font-size: 12pt;
+	 font-family: 'Lato', sans-serif;
+	margin: 0em;
+	padding: 0em;
+}
+input {
+	font-size: 10pt;
+	font-family: 'Lato', sans-serif;
+}
+.element {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	font-family: 'Lato', sans-serif;
+}
+form {
+	margin: 0em;
+	padding: 0em;
+	font-family: 'Lato', sans-serif;
+}
+.morning {
+	background: #ffc;
+}
+.noon {
+	background: #fcc;
+}
+.afternoon {
+	background: #cff;
+}
+.evening {
+	background: #ccf;
+}
+.midnight {
+	background: #ccc;
+}
+div#timelayer {
+	position:absolute;
+	visibility:hidden;
+}
+
+form.top_form {
+	margin: 0px;
+	padding: 0px;
+	float: right;
+}
+.time {
+	font-size: 8pt;
+}
+.title {
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.venue {
+	font-size: 8pt;
+}
+.location {
+	font-size: 8pt;
+}
+.edit {
+	font-size: 8pt;
+}
+
+
+.day ul {
+	margin: 5px;
+	padding: 0px 15px;
+}
+.day_of_month {
+	text-align: right;
+	float: right;
+	font-size: 14pt;
+	font-weight: bold;
+	color:#3c323a;
+}
+
+
+/* Added v0.2.0 */
+.error {
+	background: #fcc;
+}
+td, th {
+	vertical-align: top;
+}
+.sidebar {
+	width: 300px;
+	border: 3px solid #3c323a;
+	background: #faf9e7;
+	padding: 5px;
+	float:right;
+}
+/* Added v0.4.0 */
+
+.day_of_month_s {
+	text-align: right;
+	float: right;
+	color:#999;
+}
+
+table.grid {
+	float:center;
+	margin: 0 auto;
+	border: 3px solid #d3d7ae;
+}
+
+table.grid cal_top {
+	background-color: #d3d7ae;
+}
+
+table.grid th.cal_top_s {
+	background-color: #d3d7ae;
+}
+
+.button {
+	padding: 2px;
+	float: left;
+}
+
+.button div {
+	width:10px;
+	height:10px;
+	border:3px solid #3c323a;
+}
+
+table.grid td.holder {
+	 vertical-align:top;
+	 border: 0px solid #faf9e7;
+	 padding: 5px;
+}
+/* Added v0.4.1 */
+.cell {
+	height: 35px;
+	border-bottom: 1px dashed #3c323a;
+	color: #3c323a;
+}
+.cell_top {
+	background-color: #d3d7ae;
+	height: 24px;
+	border-bottom: 1px solid #3c323a;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5px;
+}
+.date {
+    position: absolute;
+    border: 3px solid #3c323a;
+    background-color : #faf9e7;
+    z-index: 1;
+    overflow-y: hidden;    /* changed from auto because I didn't want the scroll bar */
+    overflow-x: hidden;    /* added to allow IE to size the width of the event properly */
+    margin: 0px;
+}
+	
+.wrap{
+	width: 100%;
+	clear: both;
+}
+
+#dates {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+}
+.inner {
+	padding: 0px 2px;
+	font-size: 6pt;
+}
+
+.frame {
+	background-color: #d3d7ae;
+	border: 3px solid #3c323a;
+}
+
+div.cal_top {
+	background-color: #d3d7ae;
+	font-size: 16px;
+	font-weight:bold;
+	text-align:center;
+	border-bottom: 3px solid #3c323a;
+}
+.single_day_frame {
+	position:relative;
+	margin: 0px;
+	padding: 0px;
+	
+}
+/* Added v1.0.0 */
+.time_frame {
+	position:relative;
+	margin: 0px;
+	padding: 0px;
+}
+.timex {
+	width: 80px;	
+}
+
+.day_of_week {
+	height: 1440px;
+	border-left: 3px solid #3c323a;
+	position: absolute;
+}
+#today {
+	background: #ffc;
+}
+.day_of_month a, .day_of_month_s a, .week a {
+	color: #999;
+	text-decoration: none;
+}
+
+th.cal_top {
+	background-color: #b8c076;
+	color: #3c323a;
+	text-decoration: none;
+}
+
+th.cal_top_s a {
+	color: #3c323a;
+	text-decoration: underline;
+}
+table.day {
+	width: 100%;
+	border-collapse: collapse;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+table.day th {
+	background-color: #d3d7ae;
+	border-right: 1px solid #3c323a;
+	border-bottom: 1px solid #3c323a;
+	border-left: 1px solid #3c323a;
+	padding: 5px;
+}
+td.single_day {
+	border-left: 1px solid #3c323a;
+}
+.week {
+	clear: right;
+	text-align: right;
+	float: right;
+	font-size: 8pt;
+	font-weight: bold;
+	color:#999;
+}
+.cell_top a {
+	color: #3c323a;
+	text-decoration: underline;
+}
+
+.inner .time, .inner .venue, .inner .location, .inner .edit {
+	font-size: 6pt;
+}
+
+.inner .title {
+	font-size: 8pt;
+}
+.code {
+	font-family: Courier New;
+}
