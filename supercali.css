@@ -119,7 +119,7 @@ a {
 
 .content {
 	padding: 10px;
-	background-color:#b8c076;
+	background-image: url("../images/bg.jpg");
 	font-family: 'Lato', sans-serif;
 }
 .content .item {
@@ -233,6 +233,7 @@ td, th {
 	padding: 5px;
 	float:right;
 }
+
 /* Added v0.4.0 */
 
 .day_of_month_s {
@@ -244,15 +245,19 @@ td, th {
 table.grid {
 	float:center;
 	margin: 0 auto;
-	border: 3px solid #d3d7ae;
+	border: 3px solid #3c323a;
 }
 
-table.grid cal_top {
-	background-color: #d3d7ae;
+table.grid th {
+    background: #b0e0e6;
+}
+
+table.grid th.cal_top {
+	background-color: #b8c076;
 }
 
 table.grid th.cal_top_s {
-	background-color: #d3d7ae;
+	background-color: #b8c076;
 }
 
 .button {
